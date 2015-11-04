@@ -1,0 +1,18 @@
+<div class="game">
+    <div>XP: {{game.stats.xp}}</div>
+    <button class="pure-button" ng-click="train()">Train</button>
+</div>
+<div class='chat' ng-controller="ChatController">
+    <div class="messages">
+        <div ng-repeat="message in messages">
+            <span>{{message.username}}: </span><span>{{message.message}}</span>
+        </div>
+    </div>
+    <form ng-submit="sendMessage()">
+        <input type="text" ng-model="outgoingMessage" />
+        <input type="submit" value="Send" class="pure-button" />
+    </form>
+</div>
+<div>
+    <a href="/logout">Logout</a>
+</div>

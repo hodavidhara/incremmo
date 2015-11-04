@@ -1,3 +1,10 @@
+# Built files
+/dist
+
+# Intellij files
+/.idea
+*.iml
+
 # Logs
 logs
 *.log
